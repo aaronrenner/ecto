@@ -728,7 +728,7 @@ defmodule Ecto.Changeset do
 
   ## Options
 
-    * `:required` - if the association is a required field
+    * `:required` - if the association is a required field. 
     * `:required_message` - the message on failure, defaults to "can't be blank"
     * `:invalid_message` - the message on failure, defaults to "is invalid"
     * `:force_update_on_change` - force the parent record to be updated in the
@@ -761,7 +761,8 @@ defmodule Ecto.Changeset do
 
   ## Options
 
-    * `:required` - if the embed is a required field
+    * `:required` - if the embed is a required field. If casting an `embeds_many` 
+      relationship, this requires one or more embedded records to be present.
     * `:required_message` - the message on failure, defaults to "can't be blank"
     * `:invalid_message` - the message on failure, defaults to "is invalid"
     * `:force_update_on_change` - force the parent record to be updated in the
